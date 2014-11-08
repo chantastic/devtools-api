@@ -1,8 +1,24 @@
 ---
-layout: post
-title:  "$"
-date:   2014-11-07 23:00:00
-permalink: /$/
+layout:     post
+title:      "$"
+page_title: "$(selector)"
+date:       2014-11-07 23:00:00
+permalink:  /$/
 ---
 
-$
+Returns reference to the first DOM element with the specified CSS selector.This
+function is an alias for [`document.querySelector()`](http://docs.webplatform.or
+g/wiki/css/selectors_api/querySelector) function[^1].
+
+### Exercises
+
+Using `$`:
+
+* select the `<body>` element
+* select the element with class `site-footer`
+* there are multiple `<p>` elements on this page. are you able to use `$` to
+  select more than one?
+
+<a href="../$$" class="next-btn">Next</a>
+
+[^1]: https://developer.chrome.com/devtools/docs/commandline-api#selector
