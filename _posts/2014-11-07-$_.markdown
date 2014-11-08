@@ -1,8 +1,22 @@
 ---
-layout: post
-title:  "$_"
-date:   2014-11-07 23:00:00
-permalink: /$_/
+layout:     post
+title:      "$_"
+page_title: "$_"
+date:       2014-11-07 02:00:00
+permalink:  /$_/
 ---
 
-$_
+Returns the value of the most recently evaluated expression[^1].
+
+### Exercises
+
+{% include examples/shapes_example.html %}
+
+* select all the elements with class `shape`.
+* use `$_` to show the collection of `shape` elements. try it again... and again.
+* make a new selection. select only one element with class `circle`. now try
+  `$_` again. is it showing the new selection?
+
+<a href="../inspect" class="next-btn">Next</a>
+
+[^1]: https://developer.chrome.com/devtools/docs/commandline-api#_
