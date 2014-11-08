@@ -1,8 +1,49 @@
 ---
-layout: post
-title:  "$$"
-date:   2014-11-07 23:00:00
-permalink: /$$/
+layout:     post
+title:      "$$"
+page_title: "$$(selector)"
+date:       2014-11-07 23:00:00
+permalink:  /$$/
 ---
 
-$$
+Returns an array of elements that match the given CSS selector. This command is
+equivalent to calling [`document.querySelectorAll()`](https://docs.webplatform.o
+rg/wiki/css/selectors_api/querySelectorAll).[^1]
+
+### Exercises
+
+<style>
+  .shape {
+    width: 100px;
+    height: 100px;
+    background: blue;
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .rectangle { width: 150px }
+
+  .circle { border-radius: 50% }
+
+  .oval {
+    height: 50px;
+    border-radius: 50px / 25px;
+    margin-bottom: 25px;
+  }
+</style>
+
+<div class="shape parallelogram square"></div>
+<div class="shape ellipse oval"></div>
+<div class="shape parallelogram rectangle"></div>
+<div class="shape ellipse circle"></div>
+
+Using `$$`:
+
+* select the elements with class `shape`. how many are there?
+* select the elements with class `parallelogram`. how many are there?
+* there is only one element with class `circle`. if you use `$$` to select it,
+  do you still receive an array in return? try using a single `$`.
+
+<a href="../$0" class="next-btn">Next</a>
+
+[^1]: https://developer.chrome.com/devtools/docs/commandline-api#selector_1
